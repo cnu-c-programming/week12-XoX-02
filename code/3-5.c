@@ -10,11 +10,15 @@ int main(int argc, const char* argv[]) {
 
 
     int sum = 0;
-    char num[100];
+    char str[100];
     int n;
-    while(fgets(num,sizeof(num),fp) != NULL){
-        n = atoi(num);
-        sum += n;
+    while(fgets(str,sizeof(str),fp) != NULL){
+        if(n == 0){
+            printf("invaild input %s",str);
+        }else{
+            n = atoi(num);
+            sum += n;
+        }
     }
 
     printf("sum: %d\n", sum);
