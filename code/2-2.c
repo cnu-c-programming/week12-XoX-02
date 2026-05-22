@@ -11,11 +11,19 @@ int main(int argc, const char* argv[]) {
     int count = 0;
     Student students[64];
 
-
+    while(!feof(fp)){
+        fscanf(fp,"%s %d",students[count].name, &student[count].score)
+        count ++;
+    }
 
     int max = 0;
     float avg = 0;
 
+    for(int i = 0; i < count; i++){
+        if(students[i].score > max) max = students[i].score;
+        avg += students[i].score;
+    }
+    avg /= count;
 
 
     printf("max: %d\n", max);
