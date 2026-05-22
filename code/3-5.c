@@ -15,7 +15,7 @@ int main(int argc, const char* argv[]) {
     while(fgets(str,sizeof(str),fp) != NULL){
         n = atoi(str);
         if(n == 0){
-            printf("invaild input %s",str);
+            printf("invalid input %s",str);
         }else{
             sum += n;
         }
