@@ -10,7 +10,7 @@ int main(int argc, const char* argv[]) {
     if(fp_dst == NULL) perror("error: cannot open\n");
     
     char c;
-    while((c = fgetc(fp_src,)) != NULL){
+    while((c = fgetc(fp_src)) != -1){
         fputc(c,fp_dst);
         if(ferror(fp_dst)) perror("error: cannot write\n");
     }

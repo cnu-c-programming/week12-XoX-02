@@ -13,10 +13,10 @@ int main(int argc, const char* argv[]) {
     char str[100];
     int n;
     while(fgets(str,sizeof(str),fp) != NULL){
+        n = atoi(str);
         if(n == 0){
             printf("invaild input %s",str);
         }else{
-            n = atoi(num);
             sum += n;
         }
     }

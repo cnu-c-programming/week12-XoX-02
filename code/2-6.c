@@ -11,8 +11,8 @@ int main(int argc, const char* argv[]) {
     char str[200];
 
     while(fgets(str,sizeof(str),fp) != NULL){
-        if(strstr(str,agrv[2])){
-            printf("%s\n",str);
+        if(strstr(str,argv[2])){
+            printf("%s",str);
         }
     }
     
